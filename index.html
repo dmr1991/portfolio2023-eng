@@ -17,44 +17,57 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <ul class="navicons">
-        <li>
-          <a href="https://github.com/dmr1991" target="”_blank”"
-            ><img
-              class="github p-1"
-              src="images/GitHub-Logo_black.png"
-              alt="default"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/dina-morales-rivera/"
-            target="”_blank”"
-            ><img class="linkedin p-1" src="images/linkedin_black.png" alt=""
-          /></a>
-        </li>
-      </ul>
-      <ul class="nav-item-container">
-        <li><a href="index.html" class="nav-item capitalize">Home</a></li>
-        <li>
-          <a href="#aboutme" class="nav-item capitalize">About me</a>
-        </li>
-        <li>
-          <a href="#skills" class="nav-item capitalize">Skills</a>
-        </li>
-        <li><a href="#projects" class="nav-item capitalize">Projects</a></li>
-        <li><a href="#contact" class="nav-item capitalize">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="nav-icons">
+        <a
+          class="navbar-brand navicons"
+          href="https://github.com/dmr1991"
+          target="”_blank”"
+          ><img
+            class="github p-1"
+            src="images/GitHub-Logo_black.png"
+            alt="default"
+        /></a>
+        <a
+          class="navbar-brand navicons"
+          href="https://www.linkedin.com/in/dina-morales-rivera/"
+          target="”_blank”"
+          ><img class="linkedin p-1" src="images/linkedin_black.png" alt=""
+        /></a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <li><a href="index.html" class="nav-item nav-link">Home</a></li>
+          <li>
+            <a href="#aboutme" class="nav-item nav-link">About me</a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-item nav-link">Skills</a>
+          </li>
+          <li><a href="#projects" class="nav-item nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-item nav-link">Contact</a></li>
+        </div>
+      </div>
     </nav>
     <header class="header-hero">
       <div class="title-container animate-character">
@@ -69,7 +82,7 @@
           <div class="inner-content">
             <img class="profile-img" src="images/propic.png" alt="" />
             <div class="content-box">
-              <p class="content-sections white">
+              <p class="content-sections white text-about-me">
                 Hi! I am Dina and I am a Frontend Web Developer. The main
                 language I use is Javascript with the help of React.JS. I am
                 profficient in HTML, CSS and frameworks such as Bootstrap. I am
@@ -120,8 +133,6 @@
               <h2 class="section-subtitle-tech">Python</h2>
               <img src="images/iconpython.png" class="imageIcons" alt="" />
             </div>
-          </div>
-          <div class="tech-grid">
             <div class="tech cards">
               <h2 class="section-subtitle-tech">Adobe Photoshop</h2>
               <img src="images/iconphotoshop.png" class="imageIcons" alt="" />
@@ -138,6 +149,10 @@
               <h2 class="section-subtitle-tech">GitHub</h2>
               <img src="images/icongithub.png" class="imageIcons" alt="" />
             </div>
+            <div class="tech cards">
+              <h2 class="section-subtitle-tech">Wordpress</h2>
+              <img src="images/iconwordpress.png" class="imageIcons" alt="" />
+            </div>
           </div>
         </div>
       </section>
@@ -145,40 +160,34 @@
         <div class="personal-panel">
           <h1 class="title-sections white">Personal Skills</h1>
           <div class="personal-grid">
-            <div class="personal cards white">
+            <div class="personal personal-cards white">
               <h2 class="section-subtitle">Teamwork</h2>
               <p>I develop well in a team working enviroment.</p>
-              <!-- <img src="images/iconhtml.png" class="imageIcons" alt="" /> -->
             </div>
-            <div class="personal cards white">
+            <div class="personal personal-cards white">
               <h2 class="section-subtitle">Communication</h2>
               <p>Great communication skills, polite and approachable.</p>
-              <!-- <img src="images/iconcss.png" class="imageIcons" alt="" /> -->
             </div>
-            <div class="personal cards white">
+            <div class="personal personal-cards white">
               <h2 class="section-subtitle">Resolution Oriented</h2>
               <p>
                 Focused in problem solving by pursuing the most efficient and
                 effective paths.
               </p>
-              <!-- <img src="images/iconjavascript.png" class="imageIcons" alt="" /> -->
             </div>
-            <div class="personal cards white">
+            <div class="personal personal-cards white">
               <h2 class="section-subtitle">Language Proficiency</h2>
               <p>
                 High profficiency in Spanish(Native) English(C2) and German.
               </p>
-              <!-- <img src="images/iconreact.png" class="imageIcons" alt="" /> -->
             </div>
-            <div class="personal cards white">
+            <div class="personal personal-cards white">
               <h2 class="section-subtitle">Leadership</h2>
               <p>I feel comfortable in leadership positions.</p>
-              <!-- <img src="images/iconangular.png" class="imageIcons" alt="" /> -->
             </div>
-            <div class="personal cards white">
+            <div class="personal personal-cards white">
               <h2 class="section-subtitle">Creativity</h2>
               <p>I enjoy creating things and coming up with new ideas.</p>
-              <!-- <img src="images/iconphotoshop.png" class="imageIcons" alt="" /> -->
             </div>
           </div>
         </div>
@@ -187,106 +196,126 @@
         <div class="projects-panel">
           <h1 class="title-sections white">Projects</h1>
           <div class="projects-grid">
-            <div class="card projects-card-style">
-              <img
-                class="projects-thumb card-img-top"
-                src="images/binaryencrypter.png"
-                alt="screenshot of text encrypter project"
-              />
-              <div class="card-body">
-                <h2 class="projects-name card-title">Text Encrypter</h2>
-                <p class="projects-description card-text">
-                  Web App that takes an secret message as input and encrypts it
-                  into binary code.
-                </p>
-              </div>
-            </div>
-            <div class="card projects-card-style">
-              <img
-                class="projects-thumb card-img-top"
-                src="images/thumb-placeholder.jpeg"
-                alt="Trulli"
-              />
-              <div class="card-body">
-                <h2 class="projects-name card-title">Project Title</h2>
-                <p class="projects-description card-text">
-                  Fig.1 - Trulli, Puglia, Italy.
-                </p>
-              </div>
-            </div>
-            <div class="card projects-card-style">
-              <img
-                class="projects-thumb card-img-top"
-                src="images/thumb-placeholder.jpeg"
-                alt="Trulli"
-              />
-              <div class="card-body">
-                <h2 class="projects-name card-title">Project Title</h2>
-                <p class="projects-description card-text">
-                  Fig.1 - Trulli, Puglia, Italy.
-                </p>
-              </div>
-            </div>
-            <div class="card projects-card-style">
-              <img
-                class="projects-thumb card-img-top"
-                src="images/thumb-placeholder.jpeg"
-                alt="Trulli"
-              />
-              <div class="card-body">
-                <h2 class="projects-name card-title">Project Title</h2>
-                <p class="projects-description card-text">
-                  Fig.1 - Trulli, Puglia, Italy.
-                </p>
-              </div>
-            </div>
-            <div class="card projects-card-style">
-              <img
-                class="projects-thumb card-img-top"
-                src="images/thumb-placeholder.jpeg"
-                alt="Trulli"
-              />
-              <div class="card-body">
-                <h2 class="projects-name card-title">Project Title</h2>
-                <p class="projects-description card-text">
-                  Fig.1 - Trulli, Puglia, Italy.
-                </p>
-              </div>
-            </div>
-            <div class="card projects-card-style">
-              <img
-                class="projects-thumb card-img-top"
-                src="images/thumb-placeholder.jpeg"
-                alt="Trulli"
-              />
-              <div class="card-body">
-                <h2 class="projects-name card-title">Project Title</h2>
-                <p class="projects-description card-text">
-                  Fig.1 - Trulli, Puglia, Italy.
-                </p>
-              </div>
-            </div>
+            <a
+              class="project-links"
+              href="https://dmr1991.github.io/binary-encryptor/"
+              target="_blank"
+              ><div class="card projects-card-style">
+                <img
+                  class="projects-thumb card-img-top"
+                  src="images/project-binaryencrypter.png"
+                  alt="screenshot of text encrypter project"
+                />
+                <div class="card-body">
+                  <h2 class="projects-name card-title">Text Encrypter</h2>
+                  <p class="projects-description card-text">
+                    Web App that takes an secret message as input and encrypts
+                    it into binary code.
+                  </p>
+                </div>
+              </div></a
+            >
+            <a
+              class="project-links"
+              href="https://www.pi-gt.com/"
+              target="_blank"
+              ><div class="card projects-card-style">
+                <img
+                  class="projects-thumb card-img-top"
+                  src="images/project-pi.png"
+                  alt="screenshot of PI: Engineering Projects Website"
+                />
+                <div class="card-body">
+                  <h2 class="projects-name card-title">PI Website</h2>
+                  <p class="projects-description card-text">
+                    Website for PI: A construction and engineering projects
+                    company.
+                  </p>
+                </div>
+              </div></a
+            >
+            <a class="project-links" href="#" target="_blank"
+              ><div class="card projects-card-style">
+                <img
+                  class="projects-thumb card-img-top"
+                  src="images/thumb-placeholder.jpeg"
+                  alt="Trulli"
+                />
+                <div class="card-body">
+                  <h2 class="projects-name card-title">Project Title</h2>
+                  <p class="projects-description card-text">
+                    Fig.1 - Trulli, Puglia, Italy.
+                  </p>
+                </div>
+              </div></a
+            >
+            <a class="project-links" href="#" target="_blank"
+              ><div class="card projects-card-style">
+                <img
+                  class="projects-thumb card-img-top"
+                  src="images/thumb-placeholder.jpeg"
+                  alt="Trulli"
+                />
+                <div class="card-body">
+                  <h2 class="projects-name card-title">Project Title</h2>
+                  <p class="projects-description card-text">
+                    Fig.1 - Trulli, Puglia, Italy.
+                  </p>
+                </div>
+              </div></a
+            >
+            <a class="project-links" href="#" target="_blank"
+              ><div class="card projects-card-style">
+                <img
+                  class="projects-thumb card-img-top"
+                  src="images/thumb-placeholder.jpeg"
+                  alt="Trulli"
+                />
+                <div class="card-body">
+                  <h2 class="projects-name card-title">Project Title</h2>
+                  <p class="projects-description card-text">
+                    Fig.1 - Trulli, Puglia, Italy.
+                  </p>
+                </div>
+              </div></a
+            >
+            <a class="project-links" href="#" target="_blank"
+              ><div class="card projects-card-style">
+                <img
+                  class="projects-thumb card-img-top"
+                  src="images/thumb-placeholder.jpeg"
+                  alt="Trulli"
+                />
+                <div class="card-body">
+                  <h2 class="projects-name card-title">Project Title</h2>
+                  <p class="projects-description card-text">
+                    Fig.1 - Trulli, Puglia, Italy.
+                  </p>
+                </div>
+              </div></a
+            >
           </div>
         </div>
       </section>
       <section id="contact" class="contact-container">
         <div class="contact-panel">
-          <h1 class="title-sections white">Contact Me</h1>
           <div class="contact-box">
+            <h1 class="footer-text">Contact Me</h1>
             <div class="contact-info">
               <h3 class="contact-name">Dina Morales</h3>
-              <a class="contact-item" href="mailto:dinamrivera08@gmail.com"
-                >dinamrivera08@gmail.com</a
-              >
-              <a class="contact-item" href="https://github.com/dmr1991">
-                Github</a
-              >
-              <a
-                class="contact-item"
-                href="https://www.linkedin.com/in/dina-morales-rivera/"
-              >
-                Linkedin</a
-              >
+              <ul class="contact-list">
+                <a href="mailto:dinamrivera08@gmail.com" class="contact-item"
+                  ><li class="contact-list-item">dinamrivera08@gmail.com</li></a
+                >
+                <a href="https://github.com/dmr1991" class="contact-item"
+                  ><li class="contact-list-item">Github</li></a
+                >
+                <a
+                  href="https://www.linkedin.com/in/dina-morales-rivera/"
+                  class="contact-item"
+                  ><li class="contact-list-item">Linkedin</li></a
+                >
+              </ul>
             </div>
             <iframe
               class="map"
@@ -303,8 +332,8 @@
       </section>
     </main>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
   </body>
