@@ -1,0 +1,73 @@
+
+
+nOTAS DISCORD
+
+puedes hacerlo con un position fixed, eso hará que pierda el espacio que ocupa y por ende no desplazará tu contenido restante de la pagina.
+```css
+.navbar {
+  position:fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 50; //esto hará que se posicione en el eje Z, que en valor positivo es estar delante, por defecto los que tienen un position definido, estan por encima de los que no lo tienen pero el z-index hace que pueda ir hacia atras o adelante, es decir mas libertad de posicionamiento y evitar posibles problemas visuales o superposiciones.
+}
+```
+
+Es como dice <@998818536610861057> , debes usar el position fixed.
+
+
+Yo lo hice así mira:
+
+```css
+
+.panel{
+    position: fixed;
+    z-index: 997;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition:transform .3s ease;
+    /* Menu sale de la derecha */
+      transform: translate(100%, 0);
+    
+      /* Menu sale de De arriba  */
+    /* transform: translate(0, -100%); */
+    
+    /*  Menu sale deDe la izquierda */
+    /* transform: translate(-100%, 0); */
+    
+    /*  Menu sale deDe abajo */
+    /* transform: translate(0, 100%); */
+}
+
+.panel.is-active{
+    transform:translate(0, 0);
+}
+```
+Las partes comentadas son otros estilos de panel, si quiero que salga de abajo uso:
+
+```css
+/*  Menu sale deDe abajo */
+
+transform: translate(0, 100%);
+
+```
+Esto debes adaptarlo a tu proyecto, claro.
+
+Para decirle que jerarquía tiene con respecto a otros elementos. Seria, por decirlo así como trabajar por capas.
+
+ejemplo, si hacaes tu cabecera y le das ```position:fixed``` esta se desplaza  a medida que haces scroll.
+
+Pero para asegurarte de que siempre va a estar al frente, le das un ```x-index:1```, o dos o tres. 
+
+También puedes usar valores negativos ```z-index: -10``` para que los elementos vayan quedando por datrás.
